@@ -1,22 +1,28 @@
 # 安徽大学计科作业自动化工具集
 
+## OJ 自动答题
+
+基于 Playwright + 千问视觉的芒课 OJ 平台全自动答题工具。验证码识别自动登录，逐题读题→C++ 解题→提交→验证 100 分，评判卡死自动刷新重试。
+
+### 安装
+
+```bash
+cp -r AHU-cs-automation/oj-auto-submit ~/.claude/skills/
+```
+
+安装后在 Claude Code 中输入 `/oj-auto-submit` 或说"做芒课OJ的题"即可调用。
+
+详见 [oj-auto-submit/SKILL.md](oj-auto-submit/SKILL.md)
+
+---
+
 ## Data Studio SQL 自动化
 
 基于 pyautogui + pyperclip 的 Data Studio（GaussDB 客户端）自动化 SQL 执行+截图工具。
 
-### 获取方式
+### 安装
 
 ```bash
-# 克隆整个仓库
-git clone https://github.com/QIN-888/AHU-cs-automation.git
-```
-
-### 安装到 Claude Code
-
-将 skill 文件夹复制到 Claude Code 的 skills 目录即可自动发现：
-
-```bash
-# 复制 skill 到 Claude Code skills 目录
 cp -r AHU-cs-automation/datastudio-sql-automation ~/.claude/skills/
 ```
 
